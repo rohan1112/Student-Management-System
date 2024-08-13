@@ -1,0 +1,9 @@
+CREATE DATABASE studms;
+
+CREATE TABLE studentdata(Department varchar(50) NOT NULL,Year varchar(50)NOT NULL,
+Course varchar(50)NOT NULL,Semester varchar(50)NOT NULL,Studentid int NOT NULL,Studentname varchar(50)NOT NULL,
+Shift varchar(50)NOT NULL,Rollno varchar(50)NOT NULL,Gender varchar(50)NOT NULL,DOB varchar(50)NOT NULL,Email varchar(50),Phoneno varchar(10) NOT NULL,
+Address varchar(50) NOT NULL,Teachername varchar(50) NOT NULL,PRIMARY KEY(Rollno),UNIQUE(Studentid));
+
+CREATE TABLE studentmarks(Studentid int NOT NULL,Studentname varchar(50),Rollno varchar(50),Department varchar(50),Subject1 int(3) NOT NULL,
+Subject2 int(3) NOT NULL,Subject3 int(3) NOT NULL,Subject4 int(3) NOT NULL,percent Decimal(10,2));
